@@ -744,6 +744,13 @@ p {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
+@media (min-width: 992px) {
+  .navbar-area.navbar-nine .navbar .navbar-btn .menu-bar {
+    display: none;
+  }
+}
+
 .navbar-area.navbar-nine .navbar .navbar-btn .menu-bar:hover {
   border-color: transparent;
   color: var(--primary);
@@ -1623,16 +1630,11 @@ p {
 .contact-section {
   position: relative;
   z-index: 3;
-  padding-top: 100px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-section {
-    padding-top: 80px;
-  }
+  padding: 75px 0;
 }
 @media (max-width: 767px) {
   .contact-section {
-    padding-top: 60px;
+    padding: 60px 0;
   }
 }
 .contact-section .contact-item-wrapper .contact-item {
@@ -1640,12 +1642,7 @@ p {
   border: 1px solid var(--gray-4);
   border-radius: 10px;
   background: var(--white);
-  margin-bottom: 30px;
   padding: 20px 30px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 .contact-section .contact-item-wrapper .contact-item:hover {
@@ -1710,6 +1707,10 @@ p {
   font-size: 20px;
   color: var(--primary);
   margin-bottom: 10px;
+}
+
+.contact-section .contact-item-wrapper .contact-item .contact-content a {
+  color: var(--primary);
 }
 
 .contact-form-wrapper {
