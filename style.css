@@ -134,13 +134,13 @@ h2 {
 
 @media (min-width: 1025px) {
   .content {
-    background-image: url('assets/media/bg-desktop.png');
+    background-image: url('assets/media/bg-desktop.webp');
   }
 }
 
 @media (max-width: 1024px) {
   .content {
-    background-image: url('assets/media/bg-mobile.png');
+    background-image: url('assets/media/bg-mobile.webp');
   }
 }
 
